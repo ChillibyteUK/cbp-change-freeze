@@ -1,11 +1,11 @@
 <?php // phpcs:disable WordPress.Files.FileName.InvalidClassFileName
 /**
  * Plugin Name: CBP Change Freeze
- * Plugin URI: https://example.com
+ * Plugin URI: https://github.com/ChillibyteUK/cbp-change-freeze
  * Description: Notifies logged-in users when a change freeze is in effect via admin bar color change and dashboard banner.
  * Version: 1.0.0
- * Author: Your Name
- * Author URI: https://example.com
+ * Author: Chillibyte - DS
+ * Author URI: https://github.com/ChillibyteUK
  * License: GPL v2 or later
  * License URI: https://www.gnu.org/licenses/gpl-2.0.html
  * Text Domain: cbp-change-freeze
@@ -240,7 +240,7 @@ class CBP_Change_Freeze {
         $wp_admin_bar->add_node(
 			array(
 				'id'    => 'cbp-change-freeze-notice',
-				'title' => '⚠️ ' . __( 'CHANGE FREEZE', 'cbp-change-freeze' ),
+				'title' => '<span class="ab-icon dashicons dashicons-warning" aria-hidden="true"></span><span class="ab-label">' . esc_html__( 'CHANGE FREEZE', 'cbp-change-freeze' ) . '</span>',
 				'href'  => admin_url( 'options-general.php?page=cbp-change-freeze' ),
                 'meta'  => array(
                     'title' => wp_strip_all_tags( $message ),
