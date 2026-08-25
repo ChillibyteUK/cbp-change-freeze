@@ -283,11 +283,20 @@ class CBP_Change_Freeze {
                 color: #ffffff !important;
             }
             #wpadminbar li#wp-admin-bar-cbp-change-freeze-notice {
-                background: #ffffff !important;
+                background: #8b1a1a !important;
             }
-            #wpadminbar li#wp-admin-bar-cbp-change-freeze-notice a {
-                color: #b22222 !important;
+            #wpadminbar li#wp-admin-bar-cbp-change-freeze-notice > .ab-item {
+                background: #8b1a1a !important;
+                color: #ffffff !important;
                 font-weight: 600 !important;
+            }
+            #wpadminbar li#wp-admin-bar-cbp-change-freeze-notice .ab-icon:before {
+                color: #ffffff !important;
+            }
+            #wpadminbar li#wp-admin-bar-cbp-change-freeze-notice:hover > .ab-item,
+            #wpadminbar li#wp-admin-bar-cbp-change-freeze-notice > .ab-item:focus {
+                background: #5c1010 !important;
+                color: #ffffff !important;
             }
         </style>
         <?php
